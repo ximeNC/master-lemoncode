@@ -89,3 +89,8 @@ sketch
 yarn-error.log
 
 # End of https://www.toptal.com/developers/gitignore/api/angular,visualstudiocode,vuejs,react,git
+
+/**/.parcel-cache
+
+/**/package.json
+/**/yarn.lock
