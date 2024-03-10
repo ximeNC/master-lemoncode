@@ -1,0 +1,123 @@
+body {
+  background-color: #141414;
+  color: #fff;
+  font-family: "Jost", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #141414;
+  padding: 10px;
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .platform-title {
+      font-size: 25px;
+    }
+  }
+
+  .header-buttons {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+
+    div {
+      padding: 20px;
+    }
+
+    :hover {
+      background: #fff;
+      color: #141414;
+      padding: 20px;
+      border-radius: 5px;
+    }
+  }
+}
+
+main {
+  .section-title {
+    font-size: 18px;
+  }
+  .top-container {
+    margin: 40px 0 0 0;
+
+    .section-title {
+      #top-text {
+        font-weight: 700;
+      }
+    }
+    .top {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: flex-start;
+      align-items: center;
+
+      .top-item {
+        min-width: 225px;
+      }
+
+      .top-item:nth-child(1) {
+        order: 5;
+      }
+      .top-item:nth-child(2) {
+        order: 4;
+      }
+      .top-item:nth-child(3) {
+        order: 3;
+      }
+      .top-item:nth-child(4) {
+        order: 2;
+      }
+      .top-item:nth-child(5) {
+        order: 1;
+      }
+    }
+  }
+
+ /* .first {
+    flex-flow: wrap;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+
+    .item {
+      min-width: 250px; 
+      margin: 10px;
+      img {
+        width: 100%; 
+        transition: width 0.3s ease; 
+      }
+      
+    }
+
+    .item:hover img {
+      width: 120%; 
+    }
+  }*/
+
+  .first {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta automáticamente las columnas al tamaño del contenedor */
+    grid-gap: 10px; /* Espacio entre las imágenes */
+  
+  }
+  .item img {
+    width: 100%; /* Hacer que la imagen ocupe todo el espacio disponible */
+    height: auto; /* Mantener la proporción de la imagen */
+  }
+}
