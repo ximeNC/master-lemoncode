@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher</title>
+    <link rel="stylesheet" href="ej2.scss">
+</head>
+<body>
+    <div class="link"><a href="../index.html">Inicio</a></div>
+
+    <div class="container">
+        <div class="theme-container theme-a">
+            <h2>Resultado tema:</h2>
+            <div class="box base">Base</div>
+            <div class="box important">Important</div>
+            <div class="box warning">Warning</div>
+            <p class="principal-font">Principal font</p>
+            <p class="secondary-font">Secondary font</p>
+            <div class="shadow-box">Box with shadow</div>
+        </div>
+    </div>
+    <div class="theme-switcher">
+        <button onclick="setTheme('theme-a')">Tema A</button>
+        <button onclick="setTheme('theme-b')">Tema B</button>
+    </div>
+    <script src="ej2.js"></script>
+</body>
+</html>
